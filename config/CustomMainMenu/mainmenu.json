@@ -42,10 +42,10 @@
             "width": 200,
             "height": 20,
 			"alignment" : "left",
-            "action": {
-                "type": "connectToServer",
-                "ip": "localhost",
-                "port": 31040
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
             }
         },
         
