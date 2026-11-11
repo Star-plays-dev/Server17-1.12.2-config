@@ -21,56 +21,29 @@
     
     "buttons":
     {
-		"singleplayer":
-        {
-            "text" : "menu.singleplayer",
-            "posX" : 100,
-            "posY" : 107,
-            "width" : 200,
-            "height" : 20,
-			"alignment" : "left",
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "singleplayer"
-            }
-        },
         "multiplayer": {
             "text": ">> Server 17 <<",
             "posX": 100,
-            "posY": 130,
+            "posY": 120,
             "width": 200,
             "height": 20,
 			"alignment" : "left",
             "action" : 
             {
-                "type" : "openGui",
-                "gui" : "multiplayer"
+                "type" : "connectToServer",
+                "ip" : "server.17.minerent.io"
             }
         },
         
-        "mods":
-        {
-            "text" : "fml.menu.mods",
-            "posX" : 100,
-            "posY" : 160,
-			"alignment" : "left",
-            "width" : 200,
-            "height" : 20,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "mods"
-            }
-        },
+
             
         "options":
         {
             "text" : "menu.options",
             "posX" : 100,
-            "posY" : 185,
+            "posY" : 150,
 			"alignment" : "left",
-            "width" : 98,
+            "width" : 200,
             "height" : 20,
             "action" : 
             {
@@ -82,9 +55,9 @@
         "quit":
         {
             "text" : "menu.quit",
-            "posX" : 202,
-            "posY" : 185,
-            "width" : 98,
+            "posX" : 100,
+            "posY" : 175,
+            "width" : 200,
 			"alignment" : "left",
             "height" : 20,
 			"alignment" : "left",
@@ -97,11 +70,13 @@
         "language":
         {
             "text" : "",
-            "posX" : 75,
-            "posY" : 185,
+            "posX" : 280,
+            "posY" : 205,
             "width" : 20,
             "height" : 20,
 			"alignment" : "left",
+			"tooltip": "options.language",
+			"texture" : "custommainmenu:textures/gui/tr.png",
             "action" : 
             {
                 "type" : "openGui",
@@ -111,8 +86,8 @@
 		"refresh":
         {
             "text" : "",
-            "posX" : 75,
-            "posY" : 160,
+            "posX" : 100,
+            "posY" : 100,
             "width" : 20,
 			"alignment" : "left",
             "height" : 20,
@@ -121,8 +96,51 @@
             {
                 "type" : "refresh"
             }
-        }
+        },
+		"ds": {
+			"text": "",
+			"posX": 220,
+			"posY": 205,
+			"width": 20,
+			"alignment": "left",
+			"height": 20,
+			"tooltip": "\u00a7dDiscord",
+			"texture" : "custommainmenu:textures/gui/ds.png",
+			"action": {
+			"type": "openLink",
+			"link": "https://discord.gg/pRpyEhwZ7N"
+			}
+		},
+		"tg": {
+			"text": "",
+			"posX": 162,
+			"posY": 205,
+			"width": 20,
+			"alignment": "left",
+			"height": 20,
+			"tooltip": "\u00a7bTelegram",
+			"texture" : "custommainmenu:textures/gui/tg.png",
+			"action": {
+			"type": "openLink",
+			"link": "https://t.me/BeeNight"
+			}
+		},
+		"yt": {
+			"text": "",
+			"posX": 101,
+			"posY": 205,
+			"width": 20,
+			"alignment": "left",
+			"height": 20,
+			"tooltip": "\u00a7cYouTube",
+			"texture" : "custommainmenu:textures/gui/yt.png",
+			"action": {
+			"type": "openLink",
+			"link": "https://t.me/BeeNight"
+			}
+		}
 	},
+
     
     "other":
     {
