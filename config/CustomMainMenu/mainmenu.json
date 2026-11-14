@@ -21,17 +21,18 @@
     
     "buttons":
     {
-        "multiplayer": {
+
+        "multif": {
             "text": ">> Server 17 <<",
             "posX": 100,
-            "posY": 120,
+            "posY": 130,
             "width": 200,
             "height": 20,
 			"alignment" : "left",
             "action" : 
             {
-                "type" : "connectToServer",
-                "ip" : "server.17.minerent.io"
+                "type" : "openGui",
+                "gui" : "multiplayer"
             }
         },
         
@@ -83,20 +84,6 @@
                 "gui" : "languages"
             }
         },
-		"refresh":
-        {
-            "text" : "",
-            "posX" : 100,
-            "posY" : 100,
-            "width" : 20,
-			"alignment" : "left",
-            "height" : 20,
-            "texture" : "custommainmenu:textures/gui/buttons.png",
-            "action" : 
-            {
-                "type" : "refresh"
-            }
-        },
 		"ds": {
 			"text": "",
 			"posX": 220,
@@ -136,7 +123,7 @@
 			"texture" : "custommainmenu:textures/gui/yt.png",
 			"action": {
 			"type": "openLink",
-			"link": "https://t.me/BeeNight"
+			"link": "https://www.youtube.com/@Bee-Night/"
 			}
 		}
 	},
